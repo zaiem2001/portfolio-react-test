@@ -1,0 +1,100 @@
+.intro {
+  background: white;
+  display: flex;
+}
+
+.intro .left {
+  width: 100%;
+  height: 100%;
+  flex: 0.5;
+  overflow: hidden;
+}
+
+.left .imgContainer {
+  width: 800px;
+  height: 800px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgContainer img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.intro .right {
+  position: relative;
+  flex: 0.5;
+}
+.right .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+}
+
+.right a img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  animation: down 0.5s infinite alternate;
+}
+
+@keyframes down {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+}
+
+.wrapper h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.wrapper h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+h3 span {
+  color: crimson;
+}
+
+.ityped-cursor {
+  animation: cursor 0.6s alternate infinite;
+}
+
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
