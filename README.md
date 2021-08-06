@@ -1,3 +1,12 @@
+# NOTE :
+
+This commit is not responsive i'll add it in next commit.
+
+# purpose
+
+made this to learn basics of react.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
