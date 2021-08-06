@@ -24,3 +24,12 @@
     overflow-x: hidden;
 }
 
+.sections:last-child{
+}
+@media screen and (max-width:850px) {
+
+    .app .sections{
+        scroll-snap-type: none;
+    }
+    
+}

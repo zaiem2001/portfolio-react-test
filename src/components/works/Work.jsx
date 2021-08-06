@@ -10,7 +10,7 @@ export default function Work() {
       ? setSlideTo(slideTo > 0 ? slideTo - 1 : workData.length - 1)
       : setSlideTo(slideTo < workData.length - 1 ? slideTo + 1 : 0);
   }
-
+ 
   return (
     <div className="work" id="work">
       <div

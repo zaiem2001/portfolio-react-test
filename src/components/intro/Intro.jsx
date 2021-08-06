@@ -9,7 +9,7 @@ export default function Intro() {
     init(item.current, {
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer.", "Designer.", "Content Creator."],
+      strings: ["Developer.", "Designer.", "Student."],
     });
   }, []);
 
@@ -17,7 +17,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/zaiem.jpg" alt="img" />
+          <img src="assets/zaiem2.jpg" alt="img" />
         </div>
       </div>
       <div className="right">

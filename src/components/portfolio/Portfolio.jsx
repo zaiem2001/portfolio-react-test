@@ -68,7 +68,7 @@ export default function Portfolio() {
         {items.map((item, index) => {
           return (
             <Listitem
-              key={item.index}
+              key={item}
               title={item.title}
               active={isActive === item.id}
               set={setActive}

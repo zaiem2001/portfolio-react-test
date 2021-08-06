@@ -1,91 +1,170 @@
-.contact{
-    background-color: rgb(44, 39, 39);
+.contact {
+  background-color: rgb(44, 39, 39);
+  overflow: hidden;
+  position: relative;
 }
 
-.contact-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.topArrow {
+  position: absolute;
+  right: 22%;
+  width: 60px;
+  bottom: 5%;
+  transform: rotate(-90deg);
+  color: black;
+  animation: top infinite 1s alternate;
+  cursor: pointer;
 }
 
-.cLeft{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(247, 240, 240);
+@keyframes top {
+  0% {
+    opacity: 1;
+    bottom: 8%;
+  }
+  25% {
+    opacity: 0.5;
+    bottom: 7%;
+  }
+  50% {
+    opacity: 0.5;
+    bottom: 6%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 5%;
+  }
 }
 
-.cRight{
-    flex: 1;
-    display: flex;
+.contact-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(247, 240, 240);
+}
+
+.cRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(245, 108, 136);
+  align-items: center;
+  justify-content: center;
+}
+
+.cRight h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 90%;
+}
+
+form input {
+  width: 70%;
+  padding: 0 15px;
+  height: 45px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: none;
+  color: crimson;
+}
+
+form textarea {
+  width: 70%;
+  height: 75px;
+  margin: 1.5rem 0;
+  border: none;
+  color: crimson;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  padding: 15px 15px 0;
+}
+
+form button {
+  width: 40%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(224, 21, 61);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+form button:hover {
+  transform: scale(0.9);
+}
+
+form input:focus,
+form textarea:focus,
+button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 850px) {
+  .contact-container {
     flex-direction: column;
+  }
+
+  form {
     width: 100%;
-    height: 100%;
-    background-color: rgb(245, 108, 136);
-    align-items: center;
-    justify-content: center;    
-}
+  }
 
-.cRight h1{
-    font-size: 2rem;
-    color: white;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-form{
+  form input {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 70%;
-    width: 90%;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  form textarea {
+    text-align: center;
+  }
 }
 
-form input{
-    width: 70%;
-    padding: 0 15px;
-    height: 45px;
-    font-size: 1.3rem;
-    border-radius: 10px;
-    border: none;
-    color: crimson;
-}
+@media screen and (max-width: 900px) {
+  .topArrow {
+    bottom: 1%;
+    right: 35px;
+    animation: mobile 1s alternate infinite;
+  }
 
-form textarea{
-    width: 70%;
-    height: 75px;
-    margin: 1.5rem 0;
-    border: none;
-    color: crimson;
-    font-size: 1.3rem;
-    border-radius: 10px;
-    padding: 15px 15px 0;
-}
-
-form button{
-    width: 40%;
-    height: 50px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(224, 21, 61);
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all ease 0.5s;
-}
-
-form button:hover{
-    transform: scale(0.9);
-}
-
-form input:focus, form textarea:focus, button:focus{
-    outline: none;
+  @keyframes mobile {
+    0% {
+      opacity: 1;
+      bottom: 3%;
+    }
+    25% {
+      opacity: 0.5;
+      bottom: 4%;
+    }
+    100% {
+      opacity: 1;
+      bottom: 3%;
+    }
+  }
 }
