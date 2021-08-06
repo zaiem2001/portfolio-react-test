@@ -1,3 +1,7 @@
+# NOTE :
+
+This commit is not responsive i'll add it in next commit.
+
 # purpose
 
 made this to learn basics of react.
